@@ -1,0 +1,26 @@
+def hi():
+    bye()
+    print("Hello world")
+
+def bye():
+    hi()
+    print("Bye world")
+
+hi()
+
+
+def pnum(nums, i):
+    if i >= len(nums): return
+    print(nums[i]) # 1
+    pnum(nums, i+1)
+
+nums = [1, 2, 3, 4, 5]
+pnum(nums, 0)
+
+
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    return n * factorial(n - 1)
+
+print(factorial(5))
