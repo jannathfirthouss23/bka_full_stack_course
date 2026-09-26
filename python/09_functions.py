@@ -79,7 +79,7 @@ def strict(a, b, /, c, *, d):
 
 print(strict(1, 2, 3, d=4))
 
-from python.helpers.helper_functions import factorial, fib, countdown, power_rec
+from helpers.helper_functions import factorial, fib, countdown, power_rec
 
 print(factorial(5))                    # 120
 print(factorial(7))                    # 5040
