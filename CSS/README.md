@@ -12,7 +12,7 @@ Run `live server` in the folder containing `index.html`.
 - 02_lesson: Colors
 - 03_lesson: Units
 - 04_lesson: Box Model
-- 05_lesson: Typography
+- 05_lesson: Typography 
 - 06_lesson: Links - Pseudo Classes
 - 07_lesson: Lists
 - 08_lesson: Menu - Mini Project

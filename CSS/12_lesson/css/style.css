@@ -17,7 +17,6 @@ body {
     width: 75vw;
     height: 85vh;
     margin: 40px auto;
-    /*position: relative;*/
 }
 
 .parent {
@@ -38,8 +37,8 @@ body {
 .absolute {
     background-color: #00f;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 100%;
+    left: 100%;
     /* -10000px to make it disappear */
 }
 
@@ -48,7 +47,7 @@ body {
     position: relative;
     top: 100%;
     left: 100%;
-    z-index: 1;
+    /*z-index: 1;*/
 }
 
 .fixed {
@@ -56,7 +55,7 @@ body {
     position: fixed;
     bottom: 10%;
     right: 10%;
-    z-index: 2;
+    /*z-index: 2;*/
 }
 
 .sticky {
