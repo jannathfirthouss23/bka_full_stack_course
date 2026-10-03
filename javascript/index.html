@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript</title>
+    <style>
+        #grandparent { padding: 30px; background: lightblue; }
+        #parent { padding: 30px; background: lightgreen; }
+        #child { padding: 30px; background: lightcoral; cursor: pointer; }
+
+        ul { padding: 20px; background: #eee; }
+        li { padding: 10px; cursor: pointer; background: white; margin: 5px; }
+        li:hover { background: gold; }
+    </style>
+</head>
+<body>
+    <!--  START OF DOM  -->
+        <h1>DOM</h1>
+
+        <p class="box">First paragraph</p>
+        <p class="box">Second paragraph</p>
+
+        <label>
+            <input type="text" name="username" placeholder="Enter name" />
+        </label>
+
+        <button id="myBtn">Click Me</button>
+
+        <script src="./16_dom.js"></script>
+    <!--  END OF DOM  -->
+
+    <!--  START OF EVENT  -->
+        <h1>EVENT PROPAGATION</h1>
+
+        <div id="grandparent" class="event-propagation">
+            Grandparent
+            <div id="parent">
+                Parent
+                <div id="child">Child (click me)</div>
+            </div>
+        </div>
+
+        <div id="box">
+            <a href="https://google.com" id="link">Click</a>
+        </div>
+
+        <h1>EVENT DELEGATION</h1>
+
+        <div class="event-delegation">
+            <ul id="list">
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Cherry</li>
+            </ul>
+        </div>
+
+        <script src="./17_event_propagation_and_event_delegation.js"></script>
+    <!--  END OF EVENT  -->
+
+    <!--  START OF MULTI-THREADING  -->
+        <h1>MULTI THREADING</h1>
+
+        <button id="startBtn">Run heavy task on worker</button>
+        <button id="uiBtn">UI still responsive</button>
+
+        <script src="./25_multi_threading_in_browser.js"></script>
+    <!--  END OF MULTI-THREADING  -->
+
+    <script src="./01_input_output_variable_and_types.js"></script>
+    <script src="./18_storage_api.js"></script>
+</body>
+</html>
